@@ -1,0 +1,19 @@
+# Python & venv
+.venv/
+venv/
+ENV/
+dist/
+build/
+*.egg-info/
+__pycache__/
+__pycache__/
+*.so
+.Python
+*.egg-info/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*

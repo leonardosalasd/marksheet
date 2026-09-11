@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "marksheet"
+version = "0.0.1"
+authors = [
+    { name = "Leonardo Salas", email = "leonardo.salas01@outlook.com"},
+]
+description = "A CLI tool that converts Markdown and HTML into spreadsheets"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+]
+keywords = ["documentation", "excel", "spreadsheets", "markdown", "md", "cli", "zero-config"]
+
+[project.urls]
+Homepage = "https://github.com/leonardosalasd/marksheet"
+Repository = "https://github.com/leonardosalasd/marksheet"
+issues = "https://github.com/leonardosalasd/marksheet/issues"
+
+[project.scripts]
+marksheet = "marksheet.cli:main"
