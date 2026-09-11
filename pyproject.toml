@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "marksheet"
-version = "0.0.1"
+dynamic = ["version"]
 authors = [
     { name = "Leonardo Salas", email = "leonardo.salas01@outlook.com"},
 ]
@@ -35,3 +35,6 @@ issues = "https://github.com/leonardosalasd/marksheet/issues"
 
 [project.scripts]
 marksheet = "marksheet.cli:main"
+
+[tool.hatch.version]
+path = "marksheet/project_data.py"
